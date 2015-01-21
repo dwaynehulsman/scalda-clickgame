@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.[bedrijfsnaam].[appnaam]" 
+        id          = "com.bedrijfsnaam.clickgame" 
         versionCode = "1"
         version     = "0.0.1">
         
  	<!-- PLaats hieronder de naam van de app -->
-    <name></name>
+    <name>Click Game</name>
  	
  	<!-- PLaats hieronder een beschrijving van de app -->
-    <description> </description>
+    <description>Test Click Game</description>
  	
  	<!-- PLaats hieronder de link naar je website, email en zet je naam tussen de tags -->
     <author href="" email=""></author>
