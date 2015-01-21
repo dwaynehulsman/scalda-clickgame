@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+	<!-- Titel van de app-->
+	<title>Mijn app!</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<ul class="nav nav-tabs nav-pills " id="myTab">
+	<li>
+		<a href="#howtoplay" data-toggle="tab">
+
+			<!-- Naam van de uitleg tab en icoon -->
+			<em class="glyphicon glyphicon-question-sign"></em> Uitleg
+
+		</a>
+	</li>
+
+	<li>
+		<a href="#game" data-toggle="tab">
+
+			<!-- Naam van de tab van het spel zelf en icoon -->
+			<em class="glyphicon glyphicon-play"></em> Speel
+		</a>
+	</li>
+
+	<li>
+		<a href="#highscore" data-toggle="tab">
+
+			<!-- Naam van de highscore tab en icoon -->
+			<em class="glyphicon glyphicon-signal"></em> Highscore
+
+		</a>
+	</li>
+</ul>
+
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane fade in active" id="howtoplay">
+		<div id="wrapper">
+
+			<h2 id="tables-hover-rows">Click game
+
+				<!-- Extra zinnetje bij titel -->
+				<small>Laat zien wie het snelste kan klikken!</small>
+			</h2>
+
+			<img src="img/click.png">
+
+			<!-- Nieuwe alinea -->
+			<div class="alinea">
+
+				<!-- Alinea tekst -->
+				<p>De bedoeling van dit spel is om zo veel mogelijk te klikken in 1 minuut. Je probeert op die manier zo hoog mogelijk in de highscore te komen!</p>
+
+			</div>
+		</div>
+	</div>
+
+	<div role="tabpanel" class="tab-pane fade" id="highscore">
+		<table class="table table-striped">
+			<center>
+				<tr class="head-table">
+					<th><strong class="badge">#</strong></th>
+					<th>Name</th>
+					<th>Score</th>
+					<th>Rank</th>
+				</tr>
+
+				<tr>
+					<td><strong class="badge">1</strong></td>
+					<td><p class="label label-primary">Mark</p></td>
+					<td><p class="label label-success">358</p></td>
+					<td><strong style="color:gold">Gold</strong></td>
+				</tr>
+
+				<tr>
+					<td><strong class="badge">2</strong></td>
+					<td><p class="label label-primary">Jacob</p></td>
+					<td><p class="label label-success">142</p></td>
+					<td><strong style="color:silver">Silver</strong></td>
+				</tr>
+
+				<tr>
+					<td><strong class="badge">3</strong></td>
+					<td><p class="label label-primary">Larry</p></td>
+					<td><p class="label label-success">110</p></td>
+					<td><strong style="color:silver">Silver</strong></td>
+				</tr>
+
+				<tr>
+					<td><strong class="badge">4</strong></td>
+					<td><p class="label label-primary">Harry</p></td>
+					<td><p class="label label-success">89</p></td>
+					<td><strong style="color:#cd7f32">Bronze</strong></td>
+				</tr>
+
+				<tr>
+					<td><strong class="badge">5</strong></td>
+					<td><p class="label label-primary">Hank</p></td>
+					<td><p class="label label-success">72</td>
+					<td><strong style="color:#cd7f32">Bronze</strong></td>
+				</tr>
+
+				<tr>
+					<td><strong class="badge">6</strong></td>
+					<td><p class="label label-primary">Tom</p></td>
+					<td><p class="label label-success">51</td>
+					<td><strong style="color:#cd7f32">Bronze</strong></td>
+				</tr>
+			</center>
+		</table>
+	</div>
+
+	<div role="tabpanel" class="tab-pane fade" id="game">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<center>
+						<br>
+
+							<div class="score-time">
+								<p class="score">Time left: </p><span class="badge"><span class="score" id="countdown">60</span></span> 
+							</div>
+							<div class="score-score">
+								<p class="score">Score:</p> <span class="badge label-success"><span class="score" id="score">0</span></span>
+							</div>
+							<div class="float-none"></div>
+
+						<br>
+
+						<div class="spacer"></div>
+	
+						<button id="start">Start</button>
+
+						<!--Achievements-->
+						<div id="achievement1" data-placement="top" title="100 Clicks" data-content="You got the basics..."></div>
+						<div id="achievement2" data-placement="top" title="Bronze Rank | 200 Clicks!" data-content="You just beat it to a Bronze Rank!"></div>
+						<div id="achievement3" data-placement="top" title="Silver Rank | 300 Clicks!!" data-content="Nice job! You beat the button to the Silver Rank!"></div>
+						<div id="achievement4" data-placement="top" title="Gold Rank | 400 Clicks!!!" data-content="Awesome!! You just achieved the Gold Rank!!"></div>
+						<div id="achievement5" data-placement="top" title="Cheater!" data-content="You cheated! We have a very sad feeling now :("></div>
+
+						<img class="img-responsive" id="target" src="http://i.stack.imgur.com/vfLae.png" style="display: none" draggable="false">
+
+						</div>
+					<center>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
