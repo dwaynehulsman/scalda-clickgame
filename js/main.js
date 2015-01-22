@@ -2,6 +2,7 @@ var score;
 var time;
 var i;
 var achievement = '.achievement'
+var storage = require('node-persist');
 
 $('#start').click(function() {
 	score = 0;
@@ -85,5 +86,23 @@ $('#target').click(function() {
 $(function() {
 	$('#myTab a:first').tab('show')
 });
+
+
+//Presist voor het opslaan in HighScore
+
+storage.initSync();
+
+
+storage.setItem('score','playername');
+console.log(storage.getItem('name'));
+
+var harry = {
+        name: 'Harry',
+        score: '234',
+        rank: 'Silver'
+};
+
+storage.setItem('harry',harry);
+console.log(storage.getItem('harry').alias);
 
 
