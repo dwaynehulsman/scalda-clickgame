@@ -87,6 +87,15 @@ nav {
     position:relative;
     top:7px;
 	 color: inherit;
+    text-decoration: none;
+}
+.push_button_blue:visited { 
+	text-decoration: none;
+	color: inherit;
+}
+.push_button_blue:link { 
+	text-decoration: none;
+	color: inherit;
 }
 /* Green button */
 .push_button_green{
@@ -120,6 +129,14 @@ nav {
     position:relative;
     top:7px;
 }
+.push_button_green:visited { 
+	text-decoration: none;
+	color: inherit;
+}
+.push_button_green:link { 
+	text-decoration: none;
+	color: inherit;
+}
 /* Yellow button */
 .push_button_yellow{
 	position:relative;
@@ -151,6 +168,14 @@ nav {
     box-shadow: 0px 2px 0px #E8D416;
     position:relative;
     top:7px;
+}
+.push_button_yellow:visited { 
+	text-decoration: none;
+	color: inherit;
+}
+.push_button_yellow:link { 
+	text-decoration: none;
+	color: inherit;
 }
 /* Red button */
 .push_button_red{
@@ -184,6 +209,14 @@ nav {
     position:relative;
     top:7px;
 }
+.push_button_red:visited { 
+	text-decoration: none;
+	color: inherit;
+}
+.push_button_red:link { 
+	text-decoration: none;
+	color: inherit;
+}
 /* Dark Purple button */
 .push_button_darkpurple{
 	position:relative;
@@ -216,15 +249,32 @@ nav {
     position:relative;
     top:7px;
 }
+.push_button_darkpurple:visited { 
+	text-decoration: none;
+	color: inherit;
+}
+.push_button_darkpurple:link { 
+	text-decoration: none;
+	color: inherit;
+}
 /* Button text formatting */
 .button-text {
 	height:20px;
 	margin-top:45%;
 	margin-bottom:40%;
 	font-size: 40px;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .button-text:hover {
 	color: white;
+	text-decoration: none;
+}
+.button-text:hover {
+	text-decoration: none;
 }
 form {
 	text-align:center;

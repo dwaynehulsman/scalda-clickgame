@@ -24,7 +24,6 @@ $('#start').click(function() {
 			clearInterval(timer);
 
 			$('#start').css('display', 'block');
-			$('#submit-score').css('display', 'none');
 			$('#target5').css('display', 'none');
 		}
 	}, 1000);
@@ -55,6 +54,7 @@ $('#target,#target2,#target3,#target4,#target5').click(function() {
 			$('#target4').css('display', 'none');
 			$('#target5').css('display', 'block');
 	}
+	/* Reset Button | Open score entry form */
 	if (time > 60) {
 			$('#target5').css('display', 'none');
 			$('#submit-score').css('display', 'block');
