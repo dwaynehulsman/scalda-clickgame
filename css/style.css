@@ -1,7 +1,7 @@
 #start {
 	display: inline-block;
 	padding: 6px 12px;
-	margin-bottom: 0;
+	margin-bottom: 100px;
 	font-size: 50px;
 	font-weight: normal;
 	line-height: 1.42857143;
@@ -54,4 +54,181 @@ nav {
 }
 .spacer {
 	margin-top: 200px;
+}
+/* Blue Button */
+.push_button_blue{
+	position:relative;
+	width:400px;
+	height:400px;
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:5px;
+	border:solid 1px #4FA4FF;
+	background:#2EA0FF;
+	text-align:center;
+	padding:20px 30px;
+
+	color:white;
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px #4369FF;
+   -moz-box-shadow: 0px 9px 0px #4369FF;
+    box-shadow: 0px 9px 0px #4369FF;
+}
+.push_button_blue:active{
+    -webkit-box-shadow: 0px 2px 0px #4369FF;
+    -moz-box-shadow: 0px 2px 0px #4369FF;
+    box-shadow: 0px 2px 0px #4369FF;
+    position:relative;
+    top:7px;
+	 color: inherit;
+}
+/* Green button */
+.push_button_green{
+	position:relative;
+	width:400px;
+	height:400px;
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:5px;
+	border:solid 1px #549C17;
+	background:#20E11A;
+	text-align:center;
+	padding:20px 30px;
+
+	color:white;
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px #209C20;
+        -moz-box-shadow: 0px 9px 0px #209C20;
+        box-shadow: 0px 9px 0px #209C20;
+}
+.push_button_green:active{
+    -webkit-box-shadow: 0px 2px 0px #209C20;
+    -moz-box-shadow: 0px 2px 0px #209C20;
+    box-shadow: 0px 2px 0px #209C20;
+    position:relative;
+    top:7px;
+}
+/* Yellow button */
+.push_button_yellow{
+	position:relative;
+	width:400px;
+	height:400px;
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:5px;
+	border:solid 1px #FFDB00;
+	background:#FFF40E;
+	text-align:center;
+	padding:20px 30px;
+
+	color:#097054;
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px #E8D416;
+        -moz-box-shadow: 0px 9px 0px #E8D416;
+        box-shadow: 0px 9px 0px #E8D416;
+}
+.push_button_yellow:active{
+    -webkit-box-shadow: 0px 2px 0px #E8D416;
+    -moz-box-shadow: 0px 2px 0px #E8D416;
+    box-shadow: 0px 2px 0px #E8D416;
+    position:relative;
+    top:7px;
+}
+/* Red button */
+.push_button_red{
+	position:relative;
+	width:400px;
+	height:400px;
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:5px;
+	border:solid 1px #D94E3B;
+	background:#cb3b27;
+	text-align:center;
+	padding:20px 30px;
+
+	color:white;
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px #84261a;
+        -moz-box-shadow: 0px 9px 0px #84261a;
+        box-shadow: 0px 9px 0px #84261a;
+}
+.push_button_red:active{
+    -webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;
+    box-shadow: 0px 2px 0px #84261a;
+    position:relative;
+    top:7px;
+}
+/* Dark Purple button */
+.push_button_darkpurple{
+	position:relative;
+	width:400px;
+	height:400px;
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:5px;
+	border:solid 1px #C919B3;
+	background:#AA0EBD;
+	text-align:center;
+	padding:20px 30px;
+
+	color:white;
+
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px #3E054F;
+        -moz-box-shadow: 0px 9px 0px #3E054F;
+        box-shadow: 0px 9px 0px #3E054F;
+}
+.push_button_darkpurple:active{
+    -webkit-box-shadow: 0px 2px 0px #3E054F;
+    -moz-box-shadow: 0px 2px 0px #3E054F;
+    box-shadow: 0px 2px 0px #3E054F;
+    position:relative;
+    top:7px;
+}
+/* Button text formatting */
+.button-text {
+	height:20px;
+	margin-top:45%;
+	margin-bottom:40%;
+	font-size: 40px;
+}
+.button-text:hover {
+	color: white;
+}
+form {
+	text-align:center;
+	width: 200px;
+	margin: auto;
+	padding-top: 100px;
 }

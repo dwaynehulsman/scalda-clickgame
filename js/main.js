@@ -1,8 +1,7 @@
 var score;
 var time;
 var i;
-var achievement = '.achievement'
-var storage = require('node-persist');
+var achievement = '.achievement';
 
 $('#start').click(function() {
 	score = 0;
@@ -25,15 +24,41 @@ $('#start').click(function() {
 			clearInterval(timer);
 
 			$('#start').css('display', 'block');
-			$('#target').css('display', 'none');
+			$('#submit-score').css('display', 'none');
+			$('#target5').css('display', 'none');
 		}
 	}, 1000);
 });
 
-$('#target').click(function() {
+$('#target,#target2,#target3,#target4,#target5').click(function() {
 	if (time < 60) {
 		score++;
 		$('#score').text(score);
+	}
+	/* Green Button */
+	if (time > 20) {
+			$('#target').css('display', 'none');
+			$('#target2').css('display', 'block');
+	}
+	/* Yellow Button */
+	if (time > 30) {
+			$('#target2').css('display', 'none');
+			$('#target3').css('display', 'block');
+	}
+	/* Red Button */
+	if (time > 40) {
+			$('#target3').css('display', 'none');
+			$('#target4').css('display', 'block');
+	}
+	/* Dark Purple Button */
+	if (time > 50) {
+			$('#target4').css('display', 'none');
+			$('#target5').css('display', 'block');
+	}
+	if (time > 60) {
+			$('#target5').css('display', 'none');
+			$('#submit-score').css('display', 'block');
+				
 	}
 	if (score == 100) {
 		$(achievement).popover('hide')
@@ -86,23 +111,5 @@ $('#target').click(function() {
 $(function() {
 	$('#myTab a:first').tab('show')
 });
-
-
-//Presist voor het opslaan in HighScore
-
-storage.initSync();
-
-
-storage.setItem('score','playername');
-console.log(storage.getItem('name'));
-
-var harry = {
-        name: 'Harry',
-        score: '234',
-        rank: 'Silver'
-};
-
-storage.setItem('harry',harry);
-console.log(storage.getItem('harry').alias);
 
 
