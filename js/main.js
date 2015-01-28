@@ -96,9 +96,18 @@ $('#target,#target2,#target3,#target4,#target5').click(function() {
     	$(achievement).popover('hide')
 		}, 7 * 1000);
 	}
-		if (score == 4000) {
+		if (score == 500) {
 		$(achievement).popover('hide')
 		var achievement = '#achievement5'
+
+		$('#achievement5').popover('show')
+		setTimeout(function() {
+    	$(achievement).popover('hide')
+		}, 7 * 1000);
+	}
+		if (score == 4000) {
+		$(achievement).popover('hide')
+		var achievement = '#achievement6'
 		score = score = 0
 
 		$('#achievement5').popover('show')
